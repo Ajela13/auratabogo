@@ -3,12 +3,12 @@ import Navbar from '../components/Navbar';
 
 const MainLayout = () => {
   return (
-    <>
+    <div className="bg-[url('/src/assets/background.png')] bg-cover bg-center bg-fixed min-h-screen ">
       <Navbar />
       <main className="m-auto max-w-7xl p-4 ">
-        <Outlet /> 
+        <Outlet />
       </main>
-    </>
+    </div>
   );
 };
 

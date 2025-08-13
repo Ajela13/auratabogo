@@ -1,5 +1,8 @@
 import video from "../../../assets/video.mp4";
 import logo from "../../../assets/logo.svg";
+import image1 from "../../../assets/images/home/homeImage1.svg";
+import image2 from "../../../assets/images/home/homeImage2.svg";
+import image3 from "../../../assets/images/home/homeImage3.svg";
 
 const Home = () => {
   return (
@@ -16,8 +19,8 @@ const Home = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="flex flex-col gap-8">
             <div className="relative h-96 w-full flex items-center justify-center">
-              <img alt="Hip-Hop Aura" className="w-62 h-62 object-cover rounded-2xl shadow-xl absolute top-0 left-4 transform -rotate-12 transition-transform duration-300 hover:rotate-0 hover:scale-105" src="/src/assets/biography.svg" />
-              <img alt="Bio" className="w-70 h-auto object-contain rounded-2xl shadow-xl absolute bottom-0 right-4 transform rotate-6 transition-transform duration-300 hover:rotate-0 hover:scale-105 z-10" src="/src/assets/biography2.svg" />
+              <img alt="Hip-Hop Aura" className="w-62 h-62 object-cover rounded-2xl shadow-xl absolute top-0 left-4 transform -rotate-12 transition-transform duration-300 hover:rotate-0 hover:scale-105" src={image1} />
+              <img alt="Bio" className="w-70 h-auto object-contain rounded-2xl shadow-xl absolute bottom-0 right-4 transform rotate-6 transition-transform duration-300 hover:rotate-0 hover:scale-105 z-10" src={image3} />
             </div>
             <div className="text-center lg:text-left">
               <h2 className="text-2xl font-bold mb-4">Raíz Sonora</h2>
@@ -34,7 +37,7 @@ const Home = () => {
               </p>
             </div>
             <div>
-              <img alt="kid" className="w-full h-auto max-h-96 object-cover rounded-2xl shadow-xl" src="/src/assets/biography3.svg" />
+              <img alt="kid" className="w-full h-auto max-h-96 object-cover rounded-2xl shadow-xl" src={image2} />
             </div>
           </div>
         </div>

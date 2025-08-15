@@ -1,12 +1,10 @@
-import { Link } from 'react-router-dom';
-
 const Navbar = () => {
   return (
     <nav className=' font-montserrat text-white p-8 '>
       <ul className="flex justify-center space-x-4">
         <li>
           <a href="#home" className="m-2 text-lg ">
-          <Link to="/" className=''>Home</Link> 
+          Home
           </a>
         </li>
         <li>

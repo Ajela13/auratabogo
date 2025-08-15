@@ -7,9 +7,6 @@ import image3 from "../../../assets/images/home/homeImage3.svg";
 const Home = () => {
   return (
   <div className="flex flex-col items-center  backdrop-blur-sm  rounded-lg shadow-lg ">
-    <audio src="/src/assets/intro.wav" className="z-10" controls>
-      Your browser does not support the <code>audio</code> element.
-    </audio>
     <div className=" relative flex flex-col items-center justify-center h-[70vh]  bg-gray-200 w-[70vw] m-auto shadow-lg rounded-lg mt-10">
       <video src={video}  className="absolute top-0 left-0 w-full h-full object-cover rounded-lg " muted  autoPlay loop></video>
       <img alt="Logo" src={logo} className=" animate-pulse absolute -top-20 w-200 h-60 object-scale-down  "  />

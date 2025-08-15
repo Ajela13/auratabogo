@@ -1,0 +1,17 @@
+/* src/features/landing/components/GallerySection.module.css */
+
+.mySwiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  --swiper-navigation-color: #ffffff;
+  --swiper-pagination-color: #ffffff; 
+}
+
+.swiperSlide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;  /* Ancho fijo para cada slide */
+  height: 400px; /* Alto fijo para cada slide */
+}
+

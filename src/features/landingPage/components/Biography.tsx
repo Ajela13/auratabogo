@@ -1,11 +1,11 @@
 import bio1 from '@/assets/images/bio/bio1.svg';
 import bio2 from '@/assets/images/bio/bio2.svg';
-
+import audio from '@/assets/intro.wav';
 const Biography = () => {
   return (
     <div className="py-20 text-white">
       <h2 className="text-4xl font-bold text-center mb-16">Biografía</h2>
-      <audio src="/src/assets/intro.wav" className="m-auto" controls>
+      <audio src={audio} className="m-auto" controls>
       Your browser does not support the <code>audio</code> element.
       </audio>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-center">

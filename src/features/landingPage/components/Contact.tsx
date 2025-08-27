@@ -1,4 +1,4 @@
-import { FaInstagram, FaTwitter, FaYoutube, FaSpotify } from 'react-icons/fa';
+import { FaInstagram, FaTwitter, FaYoutube, FaSpotify, FaTiktok, FaFacebook, FaFacebookF } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -10,10 +10,11 @@ const Contact = () => {
       
       {/* Contenedor de los íconos de redes sociales */}
       <div className="flex justify-center items-center space-x-8">
-        <SocialIcon href="https://instagram.com" icon={<FaInstagram size={40} />} />
-        <SocialIcon href="https://twitter.com" icon={<FaTwitter size={40} />} />
-        <SocialIcon href="https://youtube.com" icon={<FaYoutube size={40} />} />
-        <SocialIcon href="https://spotify.com" icon={<FaSpotify size={40} />} />
+        <SocialIcon href="https://www.instagram.com/auratabogo/?igsh=dHZtNWszd2owNTAy&utm_source=qr#" icon={<FaInstagram size={40} />} />
+        <SocialIcon href="https://www.tiktok.com/@auratabogo?_t=ZS-8zEtuv0x9QG&_r=1" icon={<FaTiktok size={40} />} />
+        <SocialIcon href="https://youtube.com/@auratabogo?si=mamOnRPxaOQuudg9" icon={<FaYoutube size={40} />} />
+        <SocialIcon href="https://open.spotify.com/artist/3jSaEwHt3xkuS6Sm9oY6GZ?si=AqAAwrmsR-OWslJasISEBA " icon={<FaSpotify size={40} />} />
+        <SocialIcon href="https://www.facebook.com/share/16FYvV9cZi/?mibextid=wwXIfr" icon={<FaFacebookF size={40} />} />
       </div>
     </div>
   );

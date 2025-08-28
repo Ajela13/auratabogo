@@ -1,4 +1,4 @@
-import { FaInstagram, FaTwitter, FaYoutube, FaSpotify, FaTiktok, FaFacebook, FaFacebookF } from 'react-icons/fa';
+import { FaInstagram, FaYoutube, FaSpotify, FaTiktok, FaFacebookF } from 'react-icons/fa';
 
 const Contact = () => {
   return (

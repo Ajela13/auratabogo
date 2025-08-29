@@ -1,13 +1,45 @@
 import bio1 from '@/assets/images/bio/bio1.svg';
 import bio2 from '@/assets/images/bio/bio2.svg';
 import audio from '@/assets/intro.wav';
+import { PiPlayPauseFill } from "react-icons/pi";
+import { useRef } from "react";
+import { useAudioStore } from "../../../states/audioStore";
+
 const Biography = () => {
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const { isPlaying, setPlaying } = useAudioStore();
+
+  const handlePlayPause = () => {
+    if (!audioRef.current) return;
+    if (isPlaying) {
+      audioRef.current.pause();
+      setPlaying(false);
+    } else {
+      audioRef.current.play();
+      setPlaying(true);
+    }
+  };
+
+  const handleEnded = () => setPlaying(false);
+
   return (
     <div className="py-20 text-white">
-      <h2 className="text-4xl font-bold text-center mb-16">Biografía</h2>
-      <audio src={audio} className="m-auto" controls>
-      Your browser does not support the <code>audio</code> element.
-      </audio>
+      <h2 className="text-4xl font-bold text-center mb-16">Mi historia</h2>
+      <div className="flex justify-center mb-8">
+        <button
+          onClick={handlePlayPause}
+          className="bg-black rounded-full p-4 shadow-lg hover:bg-gray-800 transition-colors"
+          aria-label={isPlaying ? "Pausar audio" : "Reproducir audio"}
+        >
+          <PiPlayPauseFill size={40} color="#fff" />
+        </button>
+        <audio
+          ref={audioRef}
+          src={audio}
+          onEnded={handleEnded}
+          style={{ display: "none" }}
+        />
+      </div>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
         
         {/* Columna de Imagen Izquierda */}

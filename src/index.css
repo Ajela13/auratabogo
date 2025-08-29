@@ -1,2 +1,6 @@
 @import url(./vendor/fonts.css);
 @import "tailwindcss";
+
+.font-montserrat {
+  font-family: "montserrat", sans-serif;
+}

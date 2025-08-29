@@ -1,15 +1,13 @@
 import video from "../../../assets/video.mp4";
-import logo from "../../../assets/logo.svg";
 import image1 from "../../../assets/images/home/homeImage1.svg";
 import image2 from "../../../assets/images/home/homeImage2.svg";
 import image3 from "../../../assets/images/home/homeImage3.svg";
 
 const Home = () => {
   return (
-  <div className="flex flex-col items-center  backdrop-blur-sm  rounded-lg shadow-lg ">
+  <div className="flex flex-col items-center  backdrop-blur-sm  rounded-lg shadow-lg mt-25">
     <div className=" relative flex flex-col items-center justify-center h-[70vh]  bg-gray-200 w-[70vw] m-auto shadow-lg rounded-lg mt-10">
       <video src={video}  className="absolute top-0 left-0 w-full h-full object-cover rounded-lg " muted  autoPlay loop></video>
-      <img alt="Logo" src={logo} className=" animate-pulse absolute -top-20 w-200 h-60 object-scale-down  "  />
     </div>
     <div className="font-montserrat text-white min-h-screen mt-15  flex items-center p-4 sm:p-8">
       <div className="container mx-auto">

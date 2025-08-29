@@ -25,13 +25,14 @@ const Biography = () => {
   return (
     <div className="py-20 text-white">
       <h2 className="text-4xl font-bold text-center mb-16">Mi historia</h2>
-      <div className="flex justify-center mb-8">
+      <div className="flex  justify-center mb-8">
         <button
           onClick={handlePlayPause}
-          className="bg-black rounded-full p-4 shadow-lg hover:bg-gray-800 transition-colors"
+          className="bg-black flex items-center gap-5 rounded-full w-fit p-5 shadow-lg hover:bg-gray-700 transition-colors "
           aria-label={isPlaying ? "Pausar audio" : "Reproducir audio"}
         >
           <PiPlayPauseFill size={40} color="#fff" />
+          Un click, una historia.
         </button>
         <audio
           ref={audioRef}

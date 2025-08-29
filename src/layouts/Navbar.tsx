@@ -11,23 +11,23 @@ const Navbar = () => {
       <ul className="flex center justify-center space-x-4 text-lg bg-black/90 rounded-full py-5 px-3 m-auto">
         <li className="hover:border-b-2 border-white rounded-s">
           <a href="#home" className="m-2  ">
-          Home
+          Inicio
           </a>
         </li>
         <li className="hover:border-b-2 border-white rounded-s">
           <a href="#gallery" className="m-2 ">
-            Gallery
+            Escenarios
           </a>
         </li>
         <li className="hover:border-b-2 border-white rounded-s">
           <a href="#bio" className="m-2  ">
-            Biography
+            Mi historia
           </a>
         </li>
 
         <li className="hover:border-b-2 border-white rounded-s">
           <a href="#contact" className="m-2 ">
-            Follow me
+            Sígueme
           </a>
         </li>
 

@@ -19,7 +19,7 @@ const Gallery = () => {
   return (
     // Contenedor principal con Tailwind para el espaciado vertical
     <div className="py-16 bg">
-      <h2 className="text-4xl font-bold text-center text-white mb-12">Galería</h2>
+      <h2 className="text-4xl font-bold text-center text-white mb-12">Escenarios</h2>
 
       <div className="bg-black p-4 rounded-lg shadow-lg">
         <h3 className="text-2xl font-bold text-center text-white mb-12">Colaboraciones</h3>

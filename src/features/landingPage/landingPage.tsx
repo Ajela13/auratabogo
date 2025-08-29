@@ -16,7 +16,7 @@ const LandingPage = () => {
         <Biography />
         </section>
         <section id="contact">
-            <Contact />
+        <Contact />
         </section>
     </main>
   );

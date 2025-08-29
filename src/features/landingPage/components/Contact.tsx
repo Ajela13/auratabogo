@@ -3,10 +3,8 @@ import { FaInstagram, FaYoutube, FaSpotify, FaTiktok, FaFacebookF } from 'react-
 const Contact = () => {
   return (
     <div className="py-20 text-center text-white">
-      <h2 className="text-4xl font-bold mb-4">Sígueme</h2>
-      <p className="text-lg mb-12 max-w-2xl mx-auto">
-        Conéctate y sé el primero en saber sobre nueva música, próximos shows y proyectos creativos.
-      </p>
+      <h2 className="text-4xl font-bold mb-15">Sígueme</h2>
+   
       
       {/* Contenedor de los íconos de redes sociales */}
       <div className="flex justify-center items-center space-x-8">

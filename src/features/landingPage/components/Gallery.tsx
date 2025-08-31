@@ -6,9 +6,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 // Archivos CSS de Swiper (¡Todos son necesarios!)
+// @ts-ignore
 import 'swiper/css';
+// @ts-ignore
 import 'swiper/css/effect-coverflow';
+// @ts-ignore
 import 'swiper/css/pagination';
+// @ts-ignore
 import 'swiper/css/navigation';
 
 // Tus datos y estilos personalizados
@@ -63,7 +67,7 @@ const Gallery = () => {
           ))}
         </Swiper>
       </div>
-      <iframe data-testid="embed-iframe" className="mt-10 border-radius:12px" src="https://open.spotify.com/embed/artist/3jSaEwHt3xkuS6Sm9oY6GZ?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe data-testid="embed-iframe" className="mt-10 border-radius:12px" src="https://open.spotify.com/embed/artist/3jSaEwHt3xkuS6Sm9oY6GZ?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
     </div>
   );

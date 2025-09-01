@@ -31,7 +31,7 @@ const Biography = () => {
           className="bg-black flex items-center gap-5 rounded-full w-fit p-5 shadow-lg hover:bg-gray-700 transition-colors "
           aria-label={isPlaying ? "Pausar audio" : "Reproducir audio"}
         >
-          <PiPlayPauseFill size={40} color="#fff" />
+          <PiPlayPauseFill size={40} color={isPlaying ? "#444" : "#fff"} />
           Un click, una historia.
         </button>
         <audio
@@ -83,13 +83,14 @@ interface BioImageProps {
 
 const BioImage = ({ src, alt }: BioImageProps) => {
   return (
-    <div className="w-64 h-80 overflow-hidden rounded-lg shadow-2xl">
+    <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl aspect-[3/4] overflow-hidden rounded-lg shadow-2xl">
       <img 
         src={src} 
         alt={alt} 
         className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110"
       />
     </div>
+
   );
 };
 

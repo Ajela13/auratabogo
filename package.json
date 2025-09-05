@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ajela13.github.io/auratabogo/",
+  "homepage": "https://auratabogo.com",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
